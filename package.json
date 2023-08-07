@@ -1,0 +1,57 @@
+{
+  "name": "vue3-directive",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "types": "./types/index.d.ts",
+  "main": "./dist/vue3directive.js",
+  "module": "./dist/vue3directive.js",
+  "style": "dist/style.css",
+  "unpkg": "./dist/vue3directive.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3directive.js",
+      "require": "./dist/vue3directive.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.12.0"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "packageManager": "pnpm@8.5.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite-plugin-vue-setup-extend": "^0.4.0",
+    "vue": "^3.3.4"
+  },
+  "peerDependencies": {
+    "@iconify-json/carbon": "^1.1.18",
+    "@vueuse/core": "^10.2.1",
+    "unocss": "^0.51.8"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.1.18",
+    "@unocss/vite": "^0.53.5",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "@vue/tsconfig": "^0.4.0",
+    "@vueuse/core": "^10.2.1",
+    "typescript": "^5.1.6",
+    "unocss": "^0.53.5",
+    "unplugin-auto-import": "^0.16.6",
+    "vite": "^4.4.2",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue-tsc": "^1.8.4"
+  }
+}
