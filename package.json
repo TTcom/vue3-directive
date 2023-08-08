@@ -1,29 +1,18 @@
 {
   "name": "vue3-directive",
-  "private": true,
-  "version": "1.0.0",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
   "types": "./types/index.d.ts",
   "main": "./dist/vue3directive.js",
   "module": "./dist/vue3directive.js",
   "style": "dist/style.css",
   "unpkg": "./dist/vue3directive.umd.js",
-  "exports": {
-    ".": {
-      "import": "./dist/vue3directive.js",
-      "require": "./dist/vue3directive.umd.js"
-    },
-    "./dist/style.css": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
-    }
-  },
   "engines": {
     "node": "^14.18.0 || >=16.12.0"
   },
   "files": [
-    "dist",
-    "types"
+    "dist"
   ],
   "packageManager": "pnpm@8.5.1",
   "scripts": {
